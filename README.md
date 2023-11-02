@@ -67,13 +67,14 @@ ENTRYPOINT ["htop"]
 ## Exercice 3
 * créer un fichier et le nommé Dockerfile 
 * Mettre un From ubuntu dans le Dockerfile
-* ajouter une lign ENV DEBIAN_FRONTEND=noninteractive
+* ajouter une ligne ENV DEBIAN_FRONTEND=noninteractive
 * Ajouter un RUN apt-get update && apt install -y apache2 apache2-utils php php-mysql libapache2-mod-php && apt-get clean
 * Ajouter un EXPOSE 80
 * Puis ajouter CMD ["apachectl", "-D", "FOREGROUND"]
 * Build l'image : docker build -t <myCustomImageName> .
 * Faire tourner l'image docker run <myCustomImageName>
 * Vérifier quel tourne avec docker ps
+* faire un docker inspect <container_id> et lancer curl <ipaddress>:<port>
 * Supprimer l'images et le container
 
 
