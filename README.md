@@ -7,6 +7,7 @@
 |Chercher une image                    | docker search <string>                         |
 |Telecharger une image                 | docker pull <repo/image:tag>                   |
 |Lancer une image                      | docker run -t <repo/image:tag>                 |
+|build un image a partir d'un dockerfile| docker build -t <nom_de_l_image>  .            |
 |Voirs les conteneurs de lancer        | docker ps                                      |
 |Voir les containeurs qui existe       | docker ps -a                                   |
 |Lancer un programme dans un conteneur | docker exec -t <conteneur> <programme>         |
