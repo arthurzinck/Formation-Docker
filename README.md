@@ -70,7 +70,7 @@ ENTRYPOINT ["htop"]
 * Ajouter un RUN  apt-get update && apt install -y apache2 apache2-utils php php-mysql libapache2-mod-php && apt-get clean
 * Ajouter un EXPOSE 80
 * Puis ajouter CMD ["apachectl", "-D", "FOREGROUND"]
-* Build l'image : docker buil -t <myCustomImageName> .
+* Build l'image : docker build -t <myCustomImageName> .
 * Faire tourner l'image docker run <myCustomImageName>
 * Vérifier quel tourne avec docker ps
 * Supprimer l'images et le container
