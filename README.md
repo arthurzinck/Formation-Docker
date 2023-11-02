@@ -67,7 +67,8 @@ ENTRYPOINT ["htop"]
 ## Exercice 3
 * créer un fichier et le nommé Dockerfile 
 * Mettre un From ubuntu dans le Dockerfile
-* Ajouter un RUN  apt-get update && apt install -y apache2 apache2-utils php php-mysql libapache2-mod-php && apt-get clean
+* ajouter une lign ENV DEBIAN_FRONTEND=noninteractive
+* Ajouter un RUN apt-get update && apt install -y apache2 apache2-utils php php-mysql libapache2-mod-php && apt-get clean
 * Ajouter un EXPOSE 80
 * Puis ajouter CMD ["apachectl", "-D", "FOREGROUND"]
 * Build l'image : docker build -t <myCustomImageName> .
